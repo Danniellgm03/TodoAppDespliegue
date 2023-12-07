@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="toast" id="toast">
+        <p class="title"><strong>Error</strong></p>
+        <p class="description">El error a sido porque</p>
+    </div>
+    <main>
+        <header>
+            <h2>ToDoApp</h2>
+        </header>
+        <section>
+            <article>
+                <div class="container_search">
+                    <label for="search_input" class="search_label">
+                        <img src="assets/img/search_icon.png" alt="search_icon">
+                        <input type="text" placeholder="Busca tarea..." id="search_input" class="search_input">
+                    </label>
+                </div>
+            </article>
+            <article class="container_add_todo">
+                <button id="form_show">Añadir tarea</button>
+                <form action="">
+                    <div class="field">
+                        <label for="title_todo">Titulo de tarea: </label>
+                        <input type="text" name="title_todo" id="title_todo">
+                    </div>
+                    <div class="field">
+                        <label for="description_todo">Descripción de tarea: </label>
+                        <input type="text" name="description_todo" id="description_todo">
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+                <button id="quit_filtro">Quitar filtro</button>
+            </article>
+            <article class="container_todos">
+                <ul id="list_todos">
+                   
+                </ul>
+            </article>
+            <article class="container_empty">
+                <div class="container_empty_todos">
+                    <img src="assets/img/task_img.png" alt="">
+                    <p><strong>¿Qué quieres hacer hoy?</strong></p>
+                    <small>Presiona 'Añadir tarea' para agregar tu primera tarea</small>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
